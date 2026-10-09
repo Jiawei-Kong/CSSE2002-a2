@@ -138,6 +138,7 @@ public class Tower extends GameEntity implements Building {
         if (!isInRange(enemy)) {
             return;
         }
+        beginReload();
         new Bomb(this, enemy, listen);
     }
 
